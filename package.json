@@ -1,8 +1,9 @@
 {
   "name": "ts-node-template",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "ts-node --project tsconfig.json src/index",
+    "start": "ts-node --esm --project tsconfig.esm.json src/index",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "test": "jest"
   },
